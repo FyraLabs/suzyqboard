@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Branding")(type "KiCad")(uri "${KIPRJMOD}/Branding.pretty")(options "")(descr ""))
+)
