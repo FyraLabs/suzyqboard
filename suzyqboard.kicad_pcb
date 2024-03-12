@@ -81,7 +81,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "g")
+			(outputdirectory "ger")
 		)
 	)
 	(net 0 "")
@@ -113,7 +113,7 @@
 		(at 114.5 90 -90)
 		(descr "16-pin USB-C receptacle, USB2.0 and PD, 5A VBUS rating, https://datasheet.lcsc.com/lcsc/2211161000_HCTL-HC-TYPE-C-16P-01A_C2894897.pdf")
 		(tags "usb usb-c 2.0 pd")
-		(property "Reference" "J1"
+		(property "Reference" "J1 CB"
 			(at 0 -5.645 90)
 			(layer "F.SilkS")
 			(uuid "c5487721-0e74-4c11-8d66-ff47c13065af")
@@ -1329,7 +1329,7 @@
 		(at 134.525 90 90)
 		(descr "16-pin USB-C receptacle, USB2.0 and PD, 5A VBUS rating, https://datasheet.lcsc.com/lcsc/2211161000_HCTL-HC-TYPE-C-16P-01A_C2894897.pdf")
 		(tags "usb usb-c 2.0 pd")
-		(property "Reference" "J2"
+		(property "Reference" "J2 HO"
 			(at 0 -5.645 90)
 			(layer "F.SilkS")
 			(uuid "b4e521c9-1595-4c19-916f-14a67d1b21fb")
