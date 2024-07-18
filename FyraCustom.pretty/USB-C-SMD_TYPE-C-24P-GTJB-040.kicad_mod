@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(layer "F.Cu")
-	(property "Reference" ""
+	(property "Reference" "Ref**"
 		(at 0 -1.995 0)
 		(layer "F.SilkS")
 		(uuid "7b661293-0538-460d-b750-4099cd657eed")
@@ -14,7 +14,7 @@
 			)
 		)
 	)
-	(property "Value" ""
+	(property "Value" "Val**"
 		(at 0 12.615 0)
 		(layer "F.SilkS")
 		(uuid "7698f7a1-a634-48dd-a98d-ff3af08a2700")
@@ -34,6 +34,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -46,6 +47,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -58,6 +60,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -133,7 +136,7 @@
 		(uuid "a4ab7de5-7880-442f-80f7-c4adf2c1f1c8")
 	)
 	(fp_line
-		(start -2.741 1.975)
+		(start -2.794 1.975)
 		(end 2.86 1.975)
 		(stroke
 			(width 0.15)
