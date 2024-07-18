@@ -2158,7 +2158,7 @@
 				(justify mirror)
 			)
 		)
-		(attr smd)
+		(attr smd exclude_from_pos_files exclude_from_bom)
 		(fp_poly
 			(pts
 				(xy 0.520812 1.13513) (xy 0.625931 1.134884) (xy 0.721207 1.134509) (xy 0.742646 1.134396) (xy 1.11772 1.132318)
