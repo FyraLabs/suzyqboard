@@ -2430,6 +2430,17 @@
 		)
 		(uuid "4fc11f50-c8a0-490f-8a22-0ccd719b98ee")
 	)
+	(label "Power"
+		(at 92.71 66.04 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6e593cb8-5590-4c70-b8af-1e484a769214")
+	)
 	(symbol
 		(lib_id "power:GND")
 		(at 213.36 132.08 0)
