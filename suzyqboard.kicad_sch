@@ -2658,7 +2658,7 @@
 				)
 			)
 		)
-		(property "Value" "45.3k"
+		(property "Value" "22k"
 			(at 187.96 73.66 90)
 			(effects
 				(font
@@ -2693,7 +2693,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturers Part No." "SCR0603F45K3"
+		(property "Manufacturers Part No." "FRC0603F2202TS"
 			(at 194.31 73.66 90)
 			(effects
 				(font
@@ -2702,7 +2702,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C3016160"
+		(property "LCSC" "C2907015"
 			(at 194.31 73.66 90)
 			(effects
 				(font
@@ -3284,7 +3284,7 @@
 				)
 			)
 		)
-		(property "Value" "22k"
+		(property "Value" "10k"
 			(at 187.96 68.58 90)
 			(effects
 				(font
@@ -3319,7 +3319,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturers Part No." "FRC0603F2202TS"
+		(property "Manufacturers Part No." "0603WAF1002T5E"
 			(at 194.31 71.12 90)
 			(effects
 				(font
@@ -3328,7 +3328,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2907015"
+		(property "LCSC" "C25804"
 			(at 194.31 71.12 90)
 			(effects
 				(font

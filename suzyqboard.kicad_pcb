@@ -643,7 +643,7 @@
 				)
 			)
 		)
-		(property "Value" "45.3k"
+		(property "Value" "22k"
 			(at 0 1.43 -90)
 			(layer "F.Fab")
 			(uuid "73cf57c5-e673-40e4-a344-416df7b58dd6")
@@ -693,7 +693,7 @@
 				)
 			)
 		)
-		(property "Manufacturers Part No." "SCR0603F45K3"
+		(property "Manufacturers Part No." "FRC0603F2202TS"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -706,7 +706,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C3016160"
+		(property "LCSC" "C2907015"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1393,7 +1393,7 @@
 				)
 			)
 		)
-		(property "Value" "22k"
+		(property "Value" "10k"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "5d1f2d30-896c-49fc-89d1-912f6be087b8")
@@ -1443,7 +1443,7 @@
 				)
 			)
 		)
-		(property "Manufacturers Part No." "FRC0603F2202TS"
+		(property "Manufacturers Part No." "0603WAF1002T5E"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1456,7 +1456,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2907015"
+		(property "LCSC" "C25804"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
