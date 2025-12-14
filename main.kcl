@@ -1,6 +1,6 @@
 // Parameters
 topHeight = 5
-usbPlugHeight = -1.4
+usbPlugHeight = -1
 usbPlugLength = 10
 usbTopPlugHoleHeight = -2.4
 usbReceptacleHoleHeight = -4.25
@@ -13,42 +13,54 @@ bottomLength = 30
 bottomWidth = 18
 bottomHeight = 2
 boardSpacerHeight = -1.7
+chamferLength = 1
 
 // Case Bottom
 bottomSketch = startSketchOn(XY)
+
 bottomPlateProfile = startProfile(bottomSketch, at = [0, 0])
   |> angledLine(angle = 0deg, length = bottomWidth, tag = $rectangleSegmentA001)
-  |> angledLine(angle = segAng(rectangleSegmentA001) + 90deg, length = bottomLength)
+  |> angledLine(angle = segAng(rectangleSegmentA001) + 90deg, length = bottomLength, tag = $seg06)
   |> angledLine(angle = segAng(rectangleSegmentA001), length = -segLen(rectangleSegmentA001), tag = $seg02)
   |> line(endAbsolute = [profileStartX(%), profileStartY(%)], tag = $seg01)
   |> close()
-
 bottomPlate = extrude(bottomPlateProfile, length = bottomHeight)
-bottomPlateSketch = startSketchOn(bottomPlate, face = END)
+  |> chamfer(
+       %,
+       tags = [
+         getCommonEdge(faces = [seg02, seg01]),
+         getCommonEdge(faces = [seg06, seg02]),
+         getCommonEdge(faces = [rectangleSegmentA001, seg06]),
+         getCommonEdge(faces = [rectangleSegmentA001, seg01])
+       ],
+       length = chamferLength,
+     )
 
+bottomPlateSketch = startSketchOn(bottomPlate, face = END)
 bottomLeftNubProfile = startProfile(bottomPlateSketch, at = [0, 0])
   |> angledLine(angle = 0deg, length = bottomNubWidth, tag = $rectangleSegmentA002)
   |> angledLine(angle = segAng(rectangleSegmentA002) + 90deg, length = bottomNubLength)
   |> angledLine(angle = segAng(rectangleSegmentA002), length = -segLen(rectangleSegmentA002))
-  |> line(endAbsolute = [profileStartX(%), profileStartY(%)])
+  |> line(endAbsolute = [profileStartX(%), profileStartY(%)], tag = $seg09)
   |> close()
 bottomRightNubProfile = startProfile(bottomPlateSketch, at = [18, 0])
   |> angledLine(angle = 180deg, length = bottomNubWidth, tag = $rectangleSegmentA003)
   |> angledLine(angle = segAng(rectangleSegmentA003) - 90deg, length = bottomNubLength)
   |> angledLine(angle = segAng(rectangleSegmentA003), length = -segLen(rectangleSegmentA003))
-  |> line(endAbsolute = [profileStartX(%), profileStartY(%)])
+  |> line(endAbsolute = [profileStartX(%), profileStartY(%)], tag = $seg10)
   |> close()
 topRightNubProfile = startProfile(bottomPlateSketch, at = [18, 30])
   |> angledLine(angle = 180deg, length = bottomNubWidth, tag = $rectangleSegmentA004)
   |> angledLine(angle = segAng(rectangleSegmentA004) + 90deg, length = bottomNubLength)
   |> angledLine(angle = segAng(rectangleSegmentA004), length = -segLen(rectangleSegmentA004))
-  |> line(endAbsolute = [profileStartX(%), profileStartY(%)])
+  |> line(endAbsolute = [profileStartX(%), profileStartY(%)], tag = $seg07)
   |> close()
+
 topLeftNubProfile = startProfile(bottomPlateSketch, at = [0, 30])
   |> angledLine(angle = 0deg, length = bottomNubWidth, tag = $rectangleSegmentA005)
   |> angledLine(angle = segAng(rectangleSegmentA005) - 90deg, length = bottomNubLength)
   |> angledLine(angle = segAng(rectangleSegmentA005), length = -segLen(rectangleSegmentA005))
-  |> line(endAbsolute = [profileStartX(%), profileStartY(%)])
+  |> line(endAbsolute = [profileStartX(%), profileStartY(%)], tag = $seg08)
   |> close()
 
 usbPlugHoleProfile = startProfile(bottomPlateSketch, at = [4, 30])
@@ -57,32 +69,41 @@ usbPlugHoleProfile = startProfile(bottomPlateSketch, at = [4, 30])
   |> angledLine(angle = segAng(rectangleSegmentA006), length = -segLen(rectangleSegmentA006))
   |> line(endAbsolute = [profileStartX(%), profileStartY(%)])
   |> close()
+bottomLeftNub = extrude(bottomLeftNubProfile, length = nubHeight, method = NEW)
+  |> chamfer(%, tags = getCommonEdge(faces = [rectangleSegmentA002, seg09]), length = chamferLength)
+bottomRightNub = extrude(bottomRightNubProfile, length = nubHeight, method = NEW)
+  |> chamfer(%, tags = getCommonEdge(faces = [seg10, rectangleSegmentA003]), length = chamferLength)
+topLeftNub = extrude(topRightNubProfile, length = nubHeight, method = NEW)
+  |> chamfer(%, tags = getCommonEdge(faces = [rectangleSegmentA004, seg07]), length = chamferLength)
+topRightNub = extrude(topLeftNubProfile, length = nubHeight, method = NEW)
+  |> chamfer(%, tags = getCommonEdge(faces = [seg08, rectangleSegmentA005]), length = chamferLength)
 
-nubs = extrude(
-  [
-    bottomLeftNubProfile,
-    bottomRightNubProfile,
-    topRightNubProfile,
-    topLeftNubProfile
-  ],
-  length = nubHeight,
-)
 usbPlugHole = extrude(usbPlugHoleProfile, length = usbPlugHeight, method = NEW)
 bottom = subtract(bottomPlate, tools = usbPlugHole)
 
 // Case Top
 topSketch = startSketchOn(XY)
+
 topPlateProfile = startProfile(topSketch, at = [0, 0])
   |> angledLine(angle = 0deg, length = bottomWidth, tag = $rectangleSegmentA007)
-  |> angledLine(angle = segAng(rectangleSegmentA007) + 90deg, length = bottomLength)
-  |> angledLine(angle = segAng(rectangleSegmentA007), length = -segLen(rectangleSegmentA007))
-  |> line(endAbsolute = [profileStartX(%), profileStartY(%)])
+  |> angledLine(angle = segAng(rectangleSegmentA007) + 90deg, length = bottomLength, tag = $seg05)
+  |> angledLine(angle = segAng(rectangleSegmentA007), length = -segLen(rectangleSegmentA007), tag = $seg03)
+  |> line(endAbsolute = [profileStartX(%), profileStartY(%)], tag = $seg04)
   |> close()
-
 topPlate = extrude(topPlateProfile, length = topHeight)
+  |> chamfer(
+       %,
+       tags = [
+         getCommonEdge(faces = [seg05, seg03]),
+         getCommonEdge(faces = [rectangleSegmentA007, seg05]),
+         getCommonEdge(faces = [rectangleSegmentA007, seg04]),
+         getCommonEdge(faces = [seg03, seg04])
+       ],
+       length = chamferLength,
+     )
   |> translate(%, z = 10)
-topPlateSketch = startSketchOn(topPlate, face = START)
 
+topPlateSketch = startSketchOn(topPlate, face = START)
 bottomLeftNubHoleProfile = startProfile(topPlateSketch, at = [0, 0])
   |> angledLine(angle = 180deg, length = topNubHoleWidth, tag = $rectangleSegmentA008)
   |> angledLine(angle = segAng(rectangleSegmentA008) - 90deg, length = topNubHoleLength)
@@ -101,26 +122,26 @@ topLeftNubHoleProfile = startProfile(topPlateSketch, at = [0, 30])
   |> angledLine(angle = segAng(rectangleSegmentA009), length = -segLen(rectangleSegmentA009))
   |> line(endAbsolute = [profileStartX(%), profileStartY(%)])
   |> close()
+
 topRightNubHoleProfile = startProfile(topPlateSketch, at = [-18, 30])
   |> angledLine(angle = 0deg, length = topNubHoleWidth, tag = $rectangleSegmentA010)
   |> angledLine(angle = segAng(rectangleSegmentA010) - 90deg, length = topNubHoleLength)
   |> angledLine(angle = segAng(rectangleSegmentA010), length = -segLen(rectangleSegmentA010))
   |> line(endAbsolute = [profileStartX(%), profileStartY(%)])
   |> close()
-
 usbReceptacleHoleProfile = startProfile(topPlateSketch, at = [-14.8, 0])
   |> angledLine(angle = 0deg, length = 11.6, tag = $rectangleSegmentA013)
   |> angledLine(angle = segAng(rectangleSegmentA013) + 90deg, length = 8.6)
   |> angledLine(angle = segAng(rectangleSegmentA013), length = -segLen(rectangleSegmentA013))
   |> line(endAbsolute = [profileStartX(%), profileStartY(%)])
   |> close()
+
 usbTopPlugHoleProfile = startProfile(topPlateSketch, at = [-14.8, 30])
   |> angledLine(angle = -0deg, length = 11.6, tag = $rectangleSegmentA014)
   |> angledLine(angle = segAng(rectangleSegmentA014) - 90deg, length = 5)
   |> angledLine(angle = segAng(rectangleSegmentA014), length = -segLen(rectangleSegmentA014))
   |> line(endAbsolute = [profileStartX(%), profileStartY(%)])
   |> close()
-
 boardSpacerHole = startProfile(topPlateSketch, at = [-14.8, 25])
   |> angledLine(angle = 0deg, length = 11.6, tag = $rectangleSegmentA012)
   |> angledLine(angle = segAng(rectangleSegmentA012) - 90deg, length = 16.4)
@@ -133,14 +154,21 @@ rightBoardSpacerHole = startProfile(topPlateSketch, at = [-14.8, 23.8])
   |> angledLine(angle = segAng(rectangleSegmentA015), length = -segLen(rectangleSegmentA015))
   |> line(endAbsolute = [profileStartX(%), profileStartY(%)])
   |> close()
+
 leftBoardSpacerHole = startProfile(topPlateSketch, at = [-3.2, 23.8])
   |> angledLine(angle = 0deg, length = 0.2, tag = $rectangleSegmentA016)
   |> angledLine(angle = segAng(rectangleSegmentA016) - 90deg, length = 17.6)
   |> angledLine(angle = segAng(rectangleSegmentA016), length = -segLen(rectangleSegmentA016))
   |> line(endAbsolute = [profileStartX(%), profileStartY(%)])
   |> close()
-
-boardSpacerHoles = extrude([rightBoardSpacerHole, leftBoardSpacerHole], length = boardSpacerHeight, method = NEW)
+boardSpacerHoles = extrude(
+  [
+    rightBoardSpacerHole,
+    leftBoardSpacerHole
+  ],
+  length = boardSpacerHeight,
+  method = NEW,
+)
 nubHoles = extrude(
   [
     bottomRightNubHoleProfile,
@@ -153,8 +181,13 @@ nubHoles = extrude(
 )
 boardSpacer = extrude(boardSpacerHole, length = boardSpacerHeight, method = NEW)
 receptacleHole = extrude(usbReceptacleHoleProfile, length = usbReceptacleHoleHeight, method = NEW)
-usbTopHole = extrude(usbTopPlugHoleProfile, length = usbTopPlugHoleHeight, method = NEW)
 
-top = union([boardSpacer, usbTopHole, receptacleHole])
+usbTopHole = extrude(usbTopPlugHoleProfile, length = usbTopPlugHoleHeight, method = NEW)
+top = union([
+       boardSpacer,
+       usbTopHole,
+       receptacleHole
+     ])
   |> subtract(topPlate, tools = [%])
   |> subtract(%, tools = [nubHoles, boardSpacerHoles])
+
