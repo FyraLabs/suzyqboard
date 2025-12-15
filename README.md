@@ -1,4 +1,5 @@
 # SuzyQ Board
+[![View on PCBHub](https://img.shields.io/badge/View_on-PCBHub-2563eb?style=for-the-badge&logo=kicad&logoColor=white)](https://pcbhub.org/projects/53)
 
 This project is an implementation of the SuzyQ used to access [CCD](https://chromium.googlesource.com/chromiumos/third_party/hdctools/+/main/docs/ccd.md) on Chromebooks.
 Using CCD, you can (un)brick, debug, and flash (ex. coreboot) your Chromebook.
