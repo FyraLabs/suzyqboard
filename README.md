@@ -8,6 +8,10 @@ Using CCD, you can (un)brick, debug, and flash (ex. coreboot) your Chromebook.
 
 You can purchase a SuzyQ Board on the [Fyra Shop](https://shop.fyralabs.com/products/suzyq-board).
 
+## Usage
+
+Check out our [devdocs](https://developer.fyralabs.com/suzyqboard) for usage information.
+
 ## Images
 
 ![Front](https://github.com/user-attachments/assets/99acff1a-34fd-402f-9ee5-5a3a9cd6f432)
