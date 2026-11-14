@@ -1,0 +1,51 @@
+{
+    "layout": {
+        "type": "grid",
+        "rows": 14,
+        "cols": 4,
+        "hspace": "2.5mm",
+        "vspace": "2mm",
+        "alternation": "cols",
+        "hevendiff": "18.5mm",
+        "vbackbone": "3mm",
+        "vboneskip": 1,
+        "vbonefirst": 1,
+        "hbackbone": "3mm",
+        "hboneskip": 1,
+        "hbonefirst": 0,
+        "vbonecut": false,
+        "hbonecut": false
+    },
+    "tabs": {
+        "type": "annotation",
+        "fillet": "0mm"
+    },
+    "cuts": {
+        "type": "mousebites",
+        "drill": "0.5mm",
+        "spacing": "0.8mm",
+        "offset": "0.2mm",
+        "prolong": "0.5mm"
+    },
+    "framing": {
+        "type": "railstb",
+        "width": "5mm",
+        "space": "2mm"
+    },
+    "tooling": {
+        "type": "3hole",
+        "hoffset": "2.5mm",
+        "voffset": "2.5mm",
+        "size": "1.152mm"
+    },
+    "fiducials": {
+        "type": "3fid",
+        "hoffset": "6mm",
+        "voffset": "2.5mm",
+        "coppersize": "1mm",
+        "opening": "2mm"
+    },
+    "post": {
+        "refillzones": true
+    }
+}
