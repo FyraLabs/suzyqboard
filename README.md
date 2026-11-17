@@ -1,7 +1,7 @@
 # SuzyQ Board
 [![Purchase a Board](https://img.shields.io/badge/Purchase_with-Fyra_Shop-5e8e3e?style=for-the-badge&logo=shopify&logoColor=white)](https://shop.fyralabs.com/products/suzyq-board)
 [![View on KiCanvas](https://img.shields.io/badge/View_on-KiCanvas-2563eb?style=for-the-badge&logo=kicad&logoColor=white)](https://kicanvas.org/?repo=https%3A%2F%2Fgithub.com%2FFyraLabs%2Fsuzyqboard)
-[![View on KiCanvas](https://img.shields.io/badge/Version-FDS010-bf4563?style=for-the-badge)](https://kicanvas.org/?repo=https%3A%2F%2Fgithub.com%2FFyraLabs%2Fsuzyqboard)
+[![Version](https://img.shields.io/badge/Version-FDS010-bf4563?style=for-the-badge)](https://shop.fyralabs.com/products/suzyq-board)
 
 Co-developed with members of the [Chultrabook Project](https://docs.chrultrabook.com/), the SuzyQ Board is our take on the [SuzyQable](https://chromium.googlesource.com/chromiumos/third_party/hdctools/+/HEAD/docs/ccd.md#SuzyQ-SuzyQable) used to hack, debug, and repair Chromebooks. Using the SuzyQ Board, you can:
 
