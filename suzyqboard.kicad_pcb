@@ -1990,6 +1990,105 @@
 			)
 		)
 	)
+	(footprint "Branding:Fyra-Logo"
+		(layer "B.Cu")
+		(uuid "c832dfec-4a19-4937-a3ec-67e9c0acab20")
+		(at 133.7056 89.3318 180)
+		(property "Reference" "REF**"
+			(at 0 0.5 0)
+			(unlocked yes)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "e8d387df-f6af-49d2-971c-9e7ab74fd15c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Value" "Fyra-Logo"
+			(at 0 -1 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "61185ca9-104d-4225-bfba-aeca7c72fdf4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "c8e6c883-4b11-45de-a90e-3b7a3386fa0e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(layer "B.Fab")
+			(hide yes)
+			(uuid "ddb6d71b-ab45-4fde-afd2-8e4655760c83")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_poly
+			(pts
+				(xy 0.520812 1.13513) (xy 0.625931 1.134884) (xy 0.721207 1.134509) (xy 0.742646 1.134396) (xy 1.11772 1.132318)
+				(xy 1.11772 0.371121) (xy 1.11772 -0.390076) (xy 0.735144 -0.390076) (xy 0.352569 -0.390076) (xy 0.352569 -0.768901)
+				(xy 0.352569 -1.147726) (xy -0.009377 -1.147828) (xy -0.082094 -1.147888) (xy -0.150547 -1.148022)
+				(xy -0.213208 -1.14822) (xy -0.268552 -1.148475) (xy -0.315052 -1.148777) (xy -0.35118 -1.149119)
+				(xy -0.37541 -1.149492) (xy -0.386215 -1.149888) (xy -0.386326 -1.149901) (xy -0.396612 -1.150248)
+				(xy -0.420398 -1.15049) (xy -0.456186 -1.150629) (xy -0.502472 -1.150665) (xy -0.557756 -1.150599)
+				(xy -0.620538 -1.150432) (xy -0.689315 -1.150164) (xy -0.762587 -1.149796) (xy -0.774528 -1.149729)
+				(xy -1.147726 -1.147586) (xy -1.147726 -0.386256) (xy -1.147726 0.375074) (xy -0.765151 0.375074)
+				(xy -0.382576 0.375074) (xy -0.382576 -0.007501) (xy -0.382576 -0.390076) (xy -0.015003 -0.390076)
+				(xy 0.352569 -0.390076) (xy 0.352569 -0.007501) (xy 0.352569 0.375074) (xy -0.015003 0.375074) (xy -0.382576 0.375074)
+				(xy -0.382576 0.753696) (xy -0.382576 1.110219) (xy 0.382575 1.110219) (xy 0.382575 0.753899) (xy 0.382575 0.397579)
+				(xy 0.738895 0.397579) (xy 1.095215 0.397579) (xy 1.095215 0.753899) (xy 1.095215 1.110219) (xy 0.738895 1.110219)
+				(xy 0.382575 1.110219) (xy -0.382576 1.110219) (xy -0.382576 1.132318) (xy -0.007502 1.134396) (xy 0.08472 1.134804)
+				(xy 0.187803 1.135081) (xy 0.297607 1.135228) (xy 0.40999 1.135244)
+			)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.Mask")
+			(uuid "58071bb7-d1be-480c-99e3-e349c750c87b")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -2.5 0)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "ab1a593e-da82-42f5-83f0-a48eb5f51432")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(gr_arc
 		(start 113.048 84.4232)
 		(mid 113.165157 84.140357)
