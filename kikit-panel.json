@@ -46,6 +46,8 @@
         "opening": "2mm"
     },
     "post": {
-        "refillzones": true
+        "refillzones": true,
+        "script": "kikit-post.py",
+        "scriptarg": "0.005"
     }
 }
