@@ -27,3 +27,27 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+
+# Generated panel
+panel/
+
+# KiCad local history and lock files
+.history/
+*.lck
+\#auto_saved_files\#
+
+# Fabrication Toolkit and panelizer output
+production/
+Production/
+*.zip
+
+# Python
+__pycache__/
+*.pyc
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

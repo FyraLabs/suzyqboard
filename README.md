@@ -12,6 +12,10 @@ You can purchase a SuzyQ Board on the [Fyra Shop](https://shop.fyralabs.com/prod
 
 Check out our [devdocs](https://developer.fyralabs.com/suzyqboard) for usage information.
 
+## Manufacturing
+
+See [PANELIZING.md](PANELIZING.md) for panelizing the board and generating production files for JLCPCB.
+
 ## Images
 
 ![Front](https://github.com/user-attachments/assets/99acff1a-34fd-402f-9ee5-5a3a9cd6f432)
