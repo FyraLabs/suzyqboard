@@ -9,7 +9,8 @@ Co-developed with members of the [Chultrabook Project](https://docs.chrultrabook
 - Repair a [bricked Chromebook](https://docs.mrchromebox.tech/docs/support/unbricking/).
 - Access various [Closed Case Debugging](https://chromium.googlesource.com/chromiumos/third_party/hdctools/+/main/docs/ccd.md) functionality.
 
-For more information on using our board, please visit [our docs](https://developer.fyralabs.com/suzyqboard); To check if your Chromebook is compatible with this board, please visit the [Chromium developer documentation](https://www.chromium.org/chromium-os/developer-library/reference/development/developer-information-for-chrome-os-devices/), and check if your Chromebook supports [Closed Case Debugging](https://chromium.googlesource.com/chromiumos/third_party/hdctools/+/main/docs/ccd.md).
+For more information on using our board, please visit [our docs](https://developer.fyralabs.com/suzyqboard).
+To check if your Chromebook is compatible with this board, please visit the [Chromium developer documentation](https://www.chromium.org/chromium-os/developer-library/reference/development/developer-information-for-chrome-os-devices/), and check if your Chromebook supports [Closed Case Debugging](https://chromium.googlesource.com/chromiumos/third_party/hdctools/+/main/docs/ccd.md).
 
 ## Manufacturing
 
