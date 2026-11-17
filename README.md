@@ -11,4 +11,10 @@ Co-developed with members of the [Chultrabook Project](https://docs.chrultrabook
 
 For more information on using our board, please visit [our docs](https://developer.fyralabs.com/suzyqboard); To check if your Chromebook is compatible with this board, please visit the [Chromium developer documentation](https://www.chromium.org/chromium-os/developer-library/reference/development/developer-information-for-chrome-os-devices/), and check if your Chromebook supports [Closed Case Debugging](https://chromium.googlesource.com/chromiumos/third_party/hdctools/+/main/docs/ccd.md).
 
+## Manufacturing
+
+See [PANELIZING.md](PANELIZING.md) for panelizing the board and generating production files for JLCPCB.
+
+## Images
+
 ![Front](https://github.com/user-attachments/assets/99acff1a-34fd-402f-9ee5-5a3a9cd6f432) ![Back](https://github.com/user-attachments/assets/d1b7266d-fcde-4369-9b40-3eb7635923de)
