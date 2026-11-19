@@ -8,7 +8,7 @@
 		(unlocked yes)
 		(layer "F.SilkS")
 		(hide yes)
-		(uuid "a2b9f301-ef3b-4fc9-9855-5fec2b139f79")
+		(uuid "ac83b10e-1244-4828-bc3f-911c4d069524")
 		(effects
 			(font
 				(size 1 1)
@@ -20,7 +20,7 @@
 		(at 0 1 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "14908b28-9457-4323-8f4d-af462c097cd1")
+		(uuid "ed43f5e2-8897-4811-ae8a-a6ef8300f096")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "c478f0bc-d7e4-4b0a-92cc-68b5d78d8709")
+		(uuid "0884a5f8-9a68-4660-a762-36b6b0b39a78")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -44,7 +44,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "5f0f15af-f575-4b14-ba9f-ab368d713939")
+		(uuid "bc23da80-1849-42e3-85bf-487c73be9538")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -55,53 +55,53 @@
 	(attr smd)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_rect
-		(start -0.573864 -1.70286)
-		(end 0.57386 -0.562611)
+		(start -0.792482 -2.381764)
+		(end 0.810315 -0.789403)
 		(stroke
 			(width 0)
 			(type solid)
 		)
 		(fill yes)
 		(layer "F.Mask")
-		(uuid "0e59e80c-5b8c-4b66-a721-54307d922840")
+		(uuid "a2a2b273-f19a-4b28-ab2c-972498d1c832")
 	)
 	(fp_rect
-		(start 0.528854 -0.596361)
-		(end 1.676589 0.585114)
+		(start 0.747469 -0.836532)
+		(end 2.350289 0.813401)
 		(stroke
 			(width 0)
 			(type solid)
 		)
 		(fill yes)
 		(layer "F.Mask")
-		(uuid "415c9fe3-a210-4863-b4a7-857e70c5b3de")
+		(uuid "29236d75-340a-45b9-bb0c-676427372f49")
 	)
 	(fp_rect
-		(start 0.57386 -1.70286)
-		(end 1.67658 -1.665329)
+		(start 0.810315 -2.381764)
+		(end 2.350274 -2.329352)
 		(stroke
 			(width 0)
 			(type solid)
 		)
 		(fill yes)
 		(layer "F.Mask")
-		(uuid "b9757fb1-20c6-4e7d-8e1b-a123248fd003")
+		(uuid "0a3baf75-398d-4d1c-b965-d0cfcd388da8")
 	)
 	(fp_rect
-		(start 1.642823 -1.698477)
-		(end 1.67658 -0.596369)
+		(start 2.303129 -2.375647)
+		(end 2.350274 -0.836543)
 		(stroke
 			(width 0)
 			(type solid)
 		)
 		(fill yes)
 		(layer "F.Mask")
-		(uuid "aea0dd63-d2bc-4a96-b704-3ffcfa8a41c1")
+		(uuid "9f268e6d-1f7a-41bd-88b0-6da1587c01f7")
 	)
 	(fp_poly
 		(pts
-			(xy 0.528854 1.721589) (xy 0.528854 0.585114) (xy -0.573864 0.585114) (xy -0.573864 -0.562611) (xy -1.721589 -0.562611)
-			(xy -1.721589 1.721379)
+			(xy 0.747469 2.400494) (xy 0.747469 0.813401) (xy -0.792482 0.813401) (xy -0.792482 -0.789403) (xy -2.395289 -0.789403)
+			(xy -2.395289 2.400201)
 		)
 		(stroke
 			(width 0)
@@ -109,13 +109,13 @@
 		)
 		(fill yes)
 		(layer "F.Mask")
-		(uuid "d2cbd7d7-fac6-42da-8c01-8334b2a9142e")
+		(uuid "c1f6af85-3059-430e-b072-adb5ea48076b")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 2.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "8b726721-3ebe-41a3-9297-4d931f2728c4")
+		(uuid "7903400e-b92e-4ae6-a80f-822fab69e8a5")
 		(effects
 			(font
 				(size 1 1)
@@ -125,7 +125,7 @@
 	)
 	(zone
 		(layer "F.Cu")
-		(uuid "de2d7417-beee-44e4-9760-010ef925d51d")
+		(uuid "585609ad-3a85-4f38-bf85-8022652afe99")
 		(hatch edge 0.5)
 		(connect_pads
 			(clearance 0)
@@ -149,13 +149,13 @@
 		)
 		(polygon
 			(pts
-				(xy -0.573864 -0.562611) (xy -0.573864 0.585114) (xy 0.528854 0.585114) (xy 0.528854 -0.562611)
+				(xy 0.747469 0.813401) (xy -0.792482 0.813401) (xy -0.792482 -0.789403) (xy 0.747469 -0.789403)
 			)
 		)
 	)
 	(zone
 		(layer "F.Cu")
-		(uuid "b220356a-0774-47b1-b9b1-776824abdcfa")
+		(uuid "630a70c3-fc45-4525-a385-9546f3d72be7")
 		(hatch edge 0.5)
 		(connect_pads
 			(clearance 0)
@@ -179,15 +179,15 @@
 		)
 		(polygon
 			(pts
-				(xy 0.57386 -0.596361) (xy 1.642823 -0.596369) (xy 1.642823 -1.665329) (xy 0.57386 -1.665329)
+				(xy 0.810315 -0.836532) (xy 2.303129 -0.836543) (xy 2.303129 -2.329352) (xy 0.810315 -2.329352)
 			)
 		)
 	)
 	(group ""
-		(uuid "240267c0-3f34-4440-9306-166c4d185931")
-		(members "0e59e80c-5b8c-4b66-a721-54307d922840" "415c9fe3-a210-4863-b4a7-857e70c5b3de"
-			"aea0dd63-d2bc-4a96-b704-3ffcfa8a41c1" "b9757fb1-20c6-4e7d-8e1b-a123248fd003"
-			"d2cbd7d7-fac6-42da-8c01-8334b2a9142e"
+		(uuid "5c05bb1d-fdee-4389-a47e-b4463dbe32e2")
+		(members "0a3baf75-398d-4d1c-b965-d0cfcd388da8" "29236d75-340a-45b9-bb0c-676427372f49"
+			"9f268e6d-1f7a-41bd-88b0-6da1587c01f7" "a2a2b273-f19a-4b28-ab2c-972498d1c832"
+			"c1f6af85-3059-430e-b072-adb5ea48076b"
 		)
 	)
 	(embedded_fonts no)
