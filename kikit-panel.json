@@ -1,7 +1,7 @@
 {
     "layout": {
         "type": "grid",
-        "rows": 14,
+        "rows": 10,
         "cols": 4,
         "hspace": "2.5mm",
         "vspace": "2mm",
