@@ -1,7 +1,8 @@
 # Panelizing
 
-The panel holds 56 boards (4 × 14) at 140.2 × 237.8 mm, under JLCPCB's 250 × 250 mm
-assembly limit.
+The panel holds 40 boards (4 × 10) at 140.2 × 171.9 mm. JLCPCB asked for panels around
+200 × 200 mm or smaller, since bigger ones slow down SMT and hurt placement quality. Standard
+PCBA also needs panels of at least 70 × 70 mm, so don't drop to 2 columns (59.6 mm wide).
 
 ## Requirements
 
@@ -38,5 +39,5 @@ output goes to `panel/production/`.
   exactly on the board edge.
 - `kikit-post.py` closes a ~0.5 µm gap KiKit leaves between the backbones and the top
   rail, and keeps KiKit's fiducials and holes out of the BOM and CPL.
-- Keep `rows` even so the rows stay paired around the backbones. 12 rows gives a
-  ~204 mm panel with 48 boards.
+- Keep `rows` even so the rows stay paired around the backbones. Each pair of rows adds
+  ~32.9 mm, so 12 rows gives a ~204.8 mm panel with 48 boards.
